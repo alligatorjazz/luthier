@@ -1,0 +1,19 @@
+.Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	height: 20vh;
+	padding: 1rem;
+}
+
+.Title {
+	text-align: center;
+	margin: 0;
+}
+
+.Subtitle {
+	text-align: center;
+	margin: 0;
+}

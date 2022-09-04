@@ -1,0 +1,17 @@
+.Shade {
+	width: 200vw;
+	height: 200vh;
+	position: fixed;
+	display: inline;
+	top: 0;
+	right: 0; 
+	background-color: rgba(0, 0, 0, 0.0);
+	// background-color: magenta;
+	pointer-events: none;
+}
+
+.ShadeActive {
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(1px);
+	pointer-events: initial;
+}

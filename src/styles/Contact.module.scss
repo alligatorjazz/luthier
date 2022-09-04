@@ -1,0 +1,35 @@
+main {
+	min-height: 80vh;
+}
+
+.Columns {
+	width: 100%;
+	flex-wrap: wrap-reverse;
+
+	div {
+		height: max-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 1rem;
+	}
+
+	padding-bottom: 3rem;
+}
+
+.FormColumn {
+	flex: 7 500px;
+}
+
+.TextColumn {
+	flex: 5 1 400px;
+}
+
+form {
+	width: 95%;
+	
+	textarea {
+		min-height: 12rem;
+	}
+}

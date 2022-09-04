@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Archivo', sans-serif;
+	--text-color: black;
+	--accent-color: lightcoral;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: white;
+}
+
+a {
+	color: initial;
+	text-decoration: none;
+
+	&:visited {
+		color: initial;
+	}
+
+	&:hover {
+		color: palevioletred;
+		text-decoration: underline;
+	}
+}
+
+
+
+h1 {
+	font-size: 2.2rem;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+
+p {
+	line-height: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	height: auto;
+	width: 100%;
+	object-fit: contain;
+}
+
+// form config
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+}
+
+input, textarea, select {
+	width: 100%;
+	height: auto;
+	border: none;
+	background-color: ghostwhite;
+	margin: 0;
+	padding: 0.8rem;
+	font-size: 1.2rem;
+	min-height: 1.6rem;
+}
+
+input[type="submit"] {
+	width: 10rem;
+	text-align: center;
+}

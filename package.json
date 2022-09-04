@@ -1,0 +1,36 @@
+{
+  "name": "longsword",
+  "private": true,
+  "version": "0.1.0",
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+	"deploy": "npm run build && firebase deploy --only hosting:falchion-longsword"
+  },
+  "dependencies": {
+    "@falchion-studios/flint": "^0.7.7",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@n8tb1t/use-scroll-position": "^2.0.3",
+    "baguettebox.js": "^1.11.1",
+    "preact": "^10.10.0",
+    "react-hook-form": "^7.34.0",
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.54.0",
+    "use-breakpoint": "^3.0.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-react": "^7.30.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4"
+  }
+}

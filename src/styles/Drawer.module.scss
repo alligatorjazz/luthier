@@ -1,0 +1,89 @@
+.Drawer {
+	display: flex;
+	position: fixed;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	background-color: ghostwhite;
+	transition: all 1s;
+	z-index: 1;
+}
+
+@mixin DrawerDirection($direction: "right") {
+	height: 0;
+	width: 100vw;
+	flex-direction: row;
+	
+	@if ($direction=="right" or $direction=="left") {
+		height: 100vh;
+		width: 0;
+		flex-direction: column;
+	}
+
+	@if ($direction=="right") {
+		right: 0
+	}
+
+	@if ($direction=="left") {
+		left: 0
+	}
+
+	@if ($direction=="top") {
+		top: 0
+	}
+
+	@if ($direction=="bottom") {
+		bottom: 0
+	}
+}
+
+@mixin DrawerActive($direction: "right") {
+	@if ($direction=="right" or $direction=="left") {
+		width: 40vw;
+		max-width: 500px;
+	}
+
+	@else {
+		overflow: scroll;
+		height: 20vh;
+	}
+}
+
+
+.DrawerLeft {
+	@include DrawerDirection("left");
+}
+
+.DrawerLeftActive {
+	@include DrawerDirection("left");
+	@include DrawerActive("left");
+}
+
+.DrawerRight {
+	@include DrawerDirection("right")
+}
+
+.DrawerRightActive {
+	@include DrawerDirection("right");
+	@include DrawerActive("right");
+}
+
+.DrawerTop {
+	@include DrawerDirection("top")
+}
+
+.DrawerTopActive {
+	@include DrawerDirection("top");
+	@include DrawerActive("top")
+}
+
+.DrawerBottom {
+	@include DrawerDirection("bottom")
+}
+
+.DrawerBottomActive {
+	@include DrawerDirection("bottom");
+	@include DrawerActive("bottom")
+}
